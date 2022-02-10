@@ -3,9 +3,11 @@ on:
   issues:
       types: ['opened']
 jobs:
-  build:
+  autolabel: 
+    name: auto labeling 
     runs-on: ubuntu-latest
     steps:
+      - name: auto labeling 
       - uses: Renato66/auto-label@v2 # or v2.1.5
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
