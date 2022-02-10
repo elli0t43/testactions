@@ -6,6 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: auto label
       - uses: Renato66/auto-label@v2 # or v2.1.5
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
