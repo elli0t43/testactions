@@ -1,13 +1,12 @@
 name: Labeling new issue
-on: 
+on:
   issues:
-      types: ['opened']
+    types: ["opened"]
 jobs:
-  build: 
-    name: auto labeling 
+  build:
+    name: auto labeling
     runs-on: ubuntu-latest
     steps:
-      - name: auto labeling 
       - uses: Renato66/auto-label@v2 # or v2.1.5
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
