@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: auto label
       - uses: Renato66/auto-label@v2 # or v2.1.5
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+        env: 
+          GITHUB_TOKEN: ${{ secret.GITHUB_TOKEN }}
           labels-synonyms: '{"Bedwars":["Bedwars"],"Minigames":["Minigames"],"Oneblock":["Oneblock"],"Survival":["Survival"]}'
           labels-not-allowed: '["documentation","duplicate","enhancement","good first issue","help wanted","invalid","question","wontfix"]'
