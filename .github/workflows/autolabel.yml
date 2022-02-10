@@ -1,5 +1,5 @@
 name: Labeling new issue
-on:
+on: 
   issues:
       types: ['opened']
 jobs:
